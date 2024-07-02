@@ -65,3 +65,14 @@
 
 #PROBLEM 6:
  
+def rem(l, word):
+    n=[]
+    for i in l:
+        if not(i==word):
+            n.append(i.strip(word))
+    return n
+
+l= ["Harry", "Aman","Rohan", "anup"]
+
+n = input("Enter word: ")
+print(rem(l,n))
